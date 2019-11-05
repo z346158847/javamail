@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<!--<script type="text/javascript" src="/static/js/jquery-3.4.1.min.js"></script>-->
+<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>  
+<script type="text/javascript">
+    console.log("2")
+    var params = returnCitySN;
+    $(function () {
+        $.ajax({
+            type: "POST",
+            url: "test",
+            contentType: "application/json",
+            data: JSON.stringify(params),
+            dataType: "json",
+            success: function (r) {
+            }
+        });
+    })
+
+
+
+
+</script>
+</body>
+</html>
